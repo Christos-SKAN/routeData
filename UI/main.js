@@ -5,7 +5,7 @@ document.getElementById('request-form').addEventListener('submit', function(even
     if (from && to) {
         const data = {origin: from, destination: to}
         try {
-            fetch('http://' + location.host + '/routeData', {
+            fetch('https://' + location.host + '/routeData', {
               method: 'POST',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify(data)
