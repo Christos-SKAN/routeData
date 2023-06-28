@@ -10,7 +10,7 @@ class RequestModel(BaseModel):
     unit: str = "k"
 
 Api = FastAPI()
-templates = Jinja2Templates(directory="UI\\templates")
+templates = Jinja2Templates(directory="UI//templates")
 Api.mount("/UI", StaticFiles(directory="UI"), name="UI")
 
 @Api.get("/")
